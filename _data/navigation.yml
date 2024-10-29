@@ -3,8 +3,6 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Archives"
-    url: /archives/
   - title: "Github"
     url: https://github.com/timothyfdavison
   - title: "LinkedIn"
