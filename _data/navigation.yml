@@ -5,3 +5,9 @@ main:
     url: /about/
   - title: "Archives"
     url: /archives/
+  - title: "Github"
+    url: https://github.com/timothyfdavison
+  - title: "LinkedIn"
+    url: https://www.linkedin.com/in/timothy-davison-a318aa142/
+  - title: "Resume"
+    url: /assets/Trusting_Trust.pdf
