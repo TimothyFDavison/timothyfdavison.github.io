@@ -1,0 +1,61 @@
+// Posts grid
+.post-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjusts spacing between boxes */
+  margin: 0 -10px;
+}
+
+.post-box {
+  position: relative;
+  flex: 0 1 calc(50% - 20px); /* 3 boxes per row with spacing */
+  margin: 10px; /* Space between boxes */
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+  font-size: .4em;
+  transition: transform 0.2s;
+}
+
+@media (max-width: 768px) {
+    .post-box {
+        flex: 0 1 calc(100% - 20px); /* 2 boxes per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .post-box {
+        flex: 0 1 100%; /* 1 box per row on mobile */
+    }
+}
+
+
+// Hover, icons, title
+.post-box:hover {
+  transform: scale(1.05);
+}
+
+.post-icon img {
+  width: 100%; /* Make icon take up the entire container */
+  height: 100%;
+  object-fit: cover; /* Ensure the image fits within the box */
+  border-radius: 8px; /* Optional: round corners */
+}
+
+.post-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+  color: #fff;
+  font-size: 0.4em;
+  padding: 5px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.post-box:hover .post-title {
+  opacity: 1;
+}

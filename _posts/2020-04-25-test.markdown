@@ -1,6 +1,0 @@
----
-layout: page
-title: ""
----
-
-Landing page for my stream of consciousness.

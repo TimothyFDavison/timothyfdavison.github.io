@@ -1,0 +1,12 @@
+---
+layout: page
+icon: "/assets/roots.png"
+title: "I Need To Grow Away From These Roots"
+---
+## I Need To Grow Away From These Roots
+Ambient music generation inspired by the audio component of David Whiting's artistic piece, [I Need To
+Grow Away From These Roots](https://www.vitling.xyz/i-need-to-grow-away-from-these-roots/). 
+All credit to the original artist. 
+
+### Code
+All code can be found on my Github [here](https://github.com/TimothyFDavison/I-Need-To-Grow-Away-From-These-Roots).

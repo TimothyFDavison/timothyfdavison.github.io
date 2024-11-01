@@ -6,44 +6,30 @@ layout: default
 
   {{ content }}
 
+  <section class="homepage-banner">
+    <h1>Welcome! I'm an AI researcher at the Johns Hopkins University Applied Physics Laboratory.</h1>
+    <p>I specialize in the generation, detection, and counter-detection of synthetic media.</p>
+  </section>
+
   {% capture site_lang %}{{ site.lang | default: "en" }}{% endcapture %}
 
-  <ul class="post-list">
-    {% for post in paginator.posts %}
-      {% capture post_lang %}{{ post.lang | default: site_lang }}{% endcapture %}
-      {% capture lang %}{% if post_lang != site_lang %}{{ post_lang }}{% endif %}{% endcapture %}
-
-      <li{% if lang != empty %} lang="{{ lang }}"{% endif %}>
-        <header class="post-header">
-          <h1 class="post-title">
-            {% if post.external-url %}
-              <a class="post-link" href="{{ post.external-url }}">{{ post.title | escape }} &rarr;</a>
-            {% else %}
-              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-            {% endif %}
-          </h1>
-
-          <p class="post-meta">
-            {% if post.categories != empty or post.tags != empty %}
-              {% include category_links.html categories=post.categories tags=post.tags %}
-            {% endif %}
-            {% if post.external-url %}
-              • <a href="{{ post.url | relative_url }}">Permalink</a>
-            {% endif %}
-          </p>
-        </header>
-
-        <div class="post-content">
-          {{ post.excerpt }}
+  <div class="post-grid">
+  {% for post in paginator.posts %}
+    <div class="post-box">
+      <a href="{{ post.url | relative_url }}">
+        <div class="post-icon">
+          {% if post.icon %}
+            <img src="{{ post.icon | relative_url }}" alt="{{ post.title }} icon" />
+          {% else %}
+            <img src="/assets/icons/default-icon.png" alt="Default icon" />
+          {% endif %}
         </div>
-        {% if post.content contains site.excerpt_separator %}
-          <p class="post-continue">
-            <a href="{{ post.url | relative_url }}">{% include i18n.html lang=lang value="morelink" default="Read on" %} &rarr;</a>
-          </p>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
+        <div class="post-title">{{ post.title }}</div>
+      </a>
+    </div>
+  {% endfor %}
+</div>
+
 
   {% include pagination.html %}
 
