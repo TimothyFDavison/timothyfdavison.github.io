@@ -1,12 +1,11 @@
 ---
 layout: page
-icon: "/assets/roots.png"
-title: "I Need To Grow Away From These Roots"
+icon: "/assets/howmuchlocal.png"
+title: "How Much Local?"
 ---
-## I Need To Grow Away From These Roots
-Ambient music generation inspired by the audio component of David Whiting's artistic piece, [I Need To
-Grow Away From These Roots](https://www.vitling.xyz/i-need-to-grow-away-from-these-roots/). 
-All credit to the original artist. 
+## How Much Local
+Created in about two hours for a friend who wanted to practice the mental math required when preparing local 
+anasthesia prior to surgery.
 
 ### Code
-All code can be found on my Github [here](https://github.com/TimothyFDavison/I-Need-To-Grow-Away-From-These-Roots).
+All code can be found on my Github [here](https://github.com/TimothyFDavison/How-Much-Local).
