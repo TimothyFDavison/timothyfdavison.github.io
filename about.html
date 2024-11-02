@@ -1,0 +1,148 @@
+---
+layout: default
+permalink: /about/
+---
+
+<section class="homepage-banner">
+    <div class="banner-content">
+        <div class="image-container">
+            <img src="/assets/tim_portrait.jpg" class="profile-image">
+            <p class="image-caption">
+                Disclaimer: this is an AI-generated image based on my likeness.
+            </p>
+        </div>
+        <div class="banner-text">
+            <h2>My name is Tim Davison.</h2>
+            <p>
+                I am an AI researcher and software developer based in Washington, D.C.  <br><br>
+                I work at the Johns Hopkins University Applied Physics Laboratory (JHU/APL).  <br><br>
+                In my free time, I like to play music, read books, be outdoors, and spend time with friends
+                and family.
+            </p>
+        </div>
+    </div>
+</section>
+
+<div class="timeline-container">
+
+    <div class="timeline-event-wrapper right" style="margin-bottom: 50px;">
+        <div class="timeline-event fade-in">
+            <div class="timeline-date">Present Day</div>
+            <p>You're visiting this website. I hope you find it amusing.</p>
+        </div>
+    </div>
+
+    <div class="timeline-event-wrapper" style="margin-bottom: 100px;">
+        <div class="timeline-event fade-in">
+            <div class="timeline-date">June 2024</div>
+            <p>
+                Moved to the Washington, D.C. area.
+                Assumed a strategic leadership position at JHU/APL.
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-event-wrapper right" style="margin-bottom: 100px;">
+        <div class="timeline-event fade-in">
+            <div class="timeline-date">May 2023</div>
+            <p>
+                Graduated from Johns Hopkins University with a Master's degree in
+                Applied and Computational Mathematics.
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-event-wrapper" style="margin-bottom: 200px;">
+        <div class="timeline-event fade-in">
+            <div class="timeline-date">August 2022</div>
+            <p>
+                Moved to Tampa, FL to work onsite at USSOCOM as a technical advisor and AI SME.
+                Specialized in information operations.
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-event-wrapper right" style="margin-bottom: 100px;">
+        <div class="timeline-event fade-in">
+            <div class="timeline-date">January 2020</div>
+            <p>Published my first research paper.</p>
+        </div>
+    </div>
+
+    <div class="timeline-event-wrapper" style="margin-bottom: 150px;">
+        <div class="timeline-event fade-in">
+            <div class="timeline-date">July 2019</div>
+            <p>Awarded my first research grant as principal investigator.</p>
+        </div>
+    </div>
+
+    <div class="timeline-event-wrapper right" style="margin-bottom: 50px;">
+        <div class="timeline-event fade-in">
+            <div class="timeline-date">August 2018</div>
+            <p>
+                Began work as an AI researcher at JHU/APL.
+                Specialized in DoD cyber and information operations.
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-event-wrapper" style="margin-bottom: 500px;">
+        <div class="timeline-event fade-in">
+            <div class="timeline-date">May 2018</div>
+            <p>Graduated from the University of Virginia with majors in Mathematics and Computer Science.</p>
+        </div>
+    </div>
+
+    <div class="timeline-event-wrapper right" style="margin-bottom: 2000px;">
+        <div class="timeline-event fade-in">
+            <div class="timeline-date">July 2014</div>
+            <p>Released first album as a (semi-) professional musician.</p>
+        </div>
+    </div>
+
+    <div class="timeline-event-wrapper" style="margin-bottom: 10px;">
+        <div class="timeline-event fade-in">
+            <div class="timeline-date">1996</div>
+            <p> </p>
+        </div>
+    </div>
+
+</div>
+
+<script src="{{ '/assets/js/present_day.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/timeline.js' | relative_url }}" defer></script>
+
+<style>
+    .timeline-event {
+        margin-bottom: 10px; /* Ensures space between events */
+    }
+
+    .fade-in {
+        opacity: 1;
+        transition: opacity 0.5s ease-in;
+    }
+
+    .fade-out {
+        opacity: 0;
+        transition: opacity 0.5s ease-in;
+    }
+</style>
+
+<script>
+    document.addEventListener('scroll', function() {
+        const timelineItems = document.querySelectorAll('.timeline-event'); // Adjust class name as necessary
+
+        timelineItems.forEach(item => {
+            const bounding = item.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            if (bounding.top < windowHeight && bounding.bottom >= 0) {
+                item.classList.add('fade-in');
+                item.classList.remove('fade-out');
+            } else {
+                item.classList.add('fade-out');
+                item.classList.remove('fade-in');
+            }
+        });
+    });
+</script>

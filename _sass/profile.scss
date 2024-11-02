@@ -1,0 +1,30 @@
+// Profile image on About page.
+.banner-content {
+    display: flex; /* Use flexbox to align items */
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column; /* Stack the image and caption vertically */
+    align-items: center; /* Center items horizontally in the column */
+    margin-right: 20px; /* Space between the image and text */
+}
+
+.profile-image {
+    width: 800px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image-caption {
+    font-size: .9em !important; /* Makes the text smaller */
+    font-style: italic; /* Italicizes the text */
+    color: #666; /* Optional: sets a lighter color for the caption */
+    margin-top: 5px; /* Adds space between the text and the caption */
+    text-align: center; /* Center the caption text */
+}
+
+.banner-text {
+    max-width: 600px; /* Restrict width of text for readability */
+    flex-grow: 1; /* Allow the text area to take up remaining space */
+}
+
