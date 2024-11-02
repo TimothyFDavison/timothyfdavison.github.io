@@ -8,7 +8,7 @@
 
 .post-box {
   position: relative;
-  flex: 0 1 calc(50% - 20px); /* 3 boxes per row with spacing */
+  flex: 0 1 calc(33.33% - 20px); /* 3 boxes per row with spacing */
   margin: 10px; /* Space between boxes */
   box-sizing: border-box;
   overflow: hidden;
