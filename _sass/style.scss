@@ -34,9 +34,7 @@ $on-laptop:        100% !default;
   }
 }
 
-// Import partials.
-@import
-  "whiteglass/base",
-  "whiteglass/layout",
-  "whiteglass/syntax-highlighting"
-;
+// Local imports
+@import "whiteglass/base";
+@import "whiteglass/layout";
+@import "whiteglass/syntax-highlighting";

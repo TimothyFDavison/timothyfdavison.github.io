@@ -2,7 +2,7 @@
 .homepage-banner {
     text-align: center;
     margin: 50px auto;
-    max-width: 700px;
+    max-width: none;
 }
 
 .homepage-banner h1 {
@@ -10,7 +10,7 @@
     font-weight: bold;
     margin-bottom: 10px;
     line-height: 1.2;
-    color: #333; /* Change color if you prefer */
+    color: #333;
 }
 
 .homepage-banner p {

@@ -1,50 +1,52 @@
 // Profile image on About page.
 .banner-content {
-    display: flex; /* Use flexbox to align items */
+    display: flex;
 }
 
 .image-container {
     display: flex;
-    flex-direction: column; /* Stack the image and caption vertically */
-    align-items: center; /* Center items horizontally in the column */
-    margin-right: 20px; /* Space between the image and text */
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
 }
 
 .profile-image {
-    width: 800px; /* Set the width of the image */
-    height: auto; /* Maintain aspect ratio */
+    width: 800px;
+    height: auto;
 }
 
 .image-caption {
-    font-size: .9em !important; /* Makes the text smaller */
-    font-style: italic; /* Italicizes the text */
-    color: #666; /* Optional: sets a lighter color for the caption */
-    margin-top: 5px; /* Adds space between the text and the caption */
-    text-align: center; /* Center the caption text */
+    font-size: .9em !important;
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+    text-align: center;
 }
 
 .banner-text {
-    max-width: 600px; /* Restrict width of text for readability */
-    flex-grow: 1; /* Allow the text area to take up remaining space */
+    max-width: 600px;
+    flex-grow: 1;
 }
 
+
+// Adjust for mobile screens, smaller windows
 @media (max-width: 768px) {
     .banner-content {
-        display: block; /* Stack items vertically */
-        text-align: center; /* Center-align text */
+        display: block;
+        text-align: center;
     }
 
     .image-container {
-        margin: 0 auto; /* Center the image container */
+        margin: 0 auto;
     }
 
     .profile-image {
-        width: 100%; /* Adjust image width for mobile screens */
-        max-width: 400px; /* Optional: Limit image size on smaller screens */
+        width: 100%;
+        max-width: 400px;
     }
 
     .banner-text {
-        margin-top: 20px; /* Add space between image and text */
-        max-width: 100%; /* Allow text to expand fully */
+        margin-top: 20px;
+        max-width: 100%;
     }
 }
