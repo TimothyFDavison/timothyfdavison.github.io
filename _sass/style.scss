@@ -17,9 +17,9 @@ $grey-color-light: adjust-color($grey-color, $lightness: 45%) !default;
 $grey-color-dark:  adjust-color($grey-color, $lightness: -20%) !default;
 
 // Width of the content area
-$content-width:    800px !default;
+$content-width:    1200px !default;
 $on-palm:          600px !default;
-$on-laptop:        800px !default;
+$on-laptop:        1200px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {

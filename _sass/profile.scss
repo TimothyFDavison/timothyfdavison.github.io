@@ -28,3 +28,23 @@
     flex-grow: 1; /* Allow the text area to take up remaining space */
 }
 
+@media (max-width: 768px) {
+    .banner-content {
+        display: block; /* Stack items vertically */
+        text-align: center; /* Center-align text */
+    }
+
+    .image-container {
+        margin: 0 auto; /* Center the image container */
+    }
+
+    .profile-image {
+        width: 100%; /* Adjust image width for mobile screens */
+        max-width: 400px; /* Optional: Limit image size on smaller screens */
+    }
+
+    .banner-text {
+        margin-top: 20px; /* Add space between image and text */
+        max-width: 100%; /* Allow text to expand fully */
+    }
+}
