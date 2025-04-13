@@ -4,7 +4,7 @@ icon: "/assets/howmuchlocal.png"
 title: "How Much Local?"
 ---
 ## How Much Local
-Created in about two hours for a friend who wanted to practice the mental math required when preparing local 
+Created for a friend who wanted to practice the mental math required when preparing local 
 anasthesia prior to surgery.
 
 ### Code
