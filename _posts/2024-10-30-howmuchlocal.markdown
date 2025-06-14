@@ -1,7 +1,7 @@
 ---
 layout: page
 icon: "/assets/howmuchlocal.png"
-title: "How Much Local?"
+title: "How Much Local"
 ---
 ## How Much Local
 This project is a medical technology and education research collaboration between myself and Dr. Karim Saoud, a plastics 
@@ -9,7 +9,9 @@ surgical resident (at the time of writing) at the Washington University of St. L
 
 It provides a user interface serving as a practice environment for the mental math required when preparing local 
 anesthesia prior to surgery. The research effort is being led by Dr. Saoud, trialing improvement of surgical 
-residents' aptitude over time using varied education methodologies.
+residents' aptitude over time using varied education methodologies. 
+
+All code can be found on my Github [here](https://github.com/TimothyFDavison/How-Much-Local)
 
 ### Background
 Understanding safe dosing and volumes of local anesthesia is critical for the practicing surgeon. In the operating 

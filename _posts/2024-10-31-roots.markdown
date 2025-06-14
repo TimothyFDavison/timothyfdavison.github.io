@@ -7,6 +7,9 @@ title: "I Need To Grow Away From These Roots"
 This is an ambient music generation project inspired by the audio component of David Whiting's artistic piece,
 [I Need To Grow Away From These Roots](https://www.vitling.xyz/i-need-to-grow-away-from-these-roots/). All creative credit should be directed to the original artist.
 
+All code can be found on my Github [here](https://github.com/TimothyFDavison/I-Need-To-Grow-Away-From-These-Roots).
+
+
 ### Background
 I'm an avid musician. Occasionally, I see an intersection of my tech and music hobbies which captures 
 my interest. David Whiting's piece blends music theory with a calming synchronized light display built 
@@ -46,12 +49,38 @@ I found that the chord progression setup lent itself very naturally to a random 
 chords represented nodes and shared notes represented edges. I used `networkx` to produce that graph
 based on some parameters of interest, e.g. inclusion of major, minor, seventh, and diminished chords.
 
-I then used `numpy` to synthesize sine waves of musical notes based on their numerical frequencies, including adding some 
-fade and stylization to the sound envelope. I sprinkled in some randomness in the octaves and durations of the accent 
-notes, and then used `multiprocessing` and  `simpleaudio` to concurrently play the base chords and the accents.
+I then used `numpy` to synthesize sine waves of musical notes based on their numerical frequencies, including adding 
+some fade and stylization to the sound envelope. I sprinkled in some randomness in the octaves and durations of the
+accent notes, and then used `multiprocessing` and  `simpleaudio` to concurrently play the base chords and the accents.
 
-### Implementation
+### Network Visualization
+I decided to visualize my chord network to see how the musical landscape evolved over time. This decision led me down 
+several rabbit holes on topological distance metrics and underlying mathematical relationships in musical structure.
 
+Here's the critical question: **_how should we define similarity between notes or chords?_**
+
+Sound is already mathematical - a note represents a frequency, and an octave change doubles or halves that
+frequency. We tend to find certain ratios of these frequencies pleasing or displeasing, 
+giving rise to chords and chord progressions. 
+
+The standardization of A = 440 Hz as a tuning reference began in the early 20th century and was internationally 
+adopted in the mid-century, though slight variations persist. If we had collectively decided that A were to be 439 Hz
+instead of 440, our preferred ratios would remain the same, but all of today’s music would be slightly differently
+pitched.
+
+Two minor chords share an isomorphic structure — the same interval pattern — even when rooted at different frequencies.
+Are A minor and C minor more similar to one another than A minor and A major? Should 440 Hz be considered similar to
+439 Hz and 441 Hz, seeing as their tones are near identical? How do we quantify how different F4 minor and F5 minor
+(identical chords separated by one octave) are from one another, and is that difference less significant than the 
+difference between F4 minor and G4 minor?
+
+These questions arise naturally from attempting to visualize our chord network, as the design of our distance metric 
+will induce radically different topologies in the output graph. I spent some time playing around with different ways 
+to quanitfy similarity 
+and distance within this context, exploring different possible weights in a distance function for things like octave 
+separation, frequency clusters, number of overlapping root notes between chords, etc. Some of these knobs and dials 
+can be found in `config` files on my Github page, with accompanying screenshots from network structures emanating from 
+those variations on the Github README.
 
 ### Code
 All code can be found on my Github [here](https://github.com/TimothyFDavison/I-Need-To-Grow-Away-From-These-Roots).
