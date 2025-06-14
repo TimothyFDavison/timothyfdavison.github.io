@@ -32,16 +32,14 @@ calculate the proper dosage amount of the anesthetic. Upon submission of their e
 the correct dosage and provides a green/yellow/red assessment on the accuracy of the user's estimate.
 
 To assist the user with their thinking, optional elements below the main section provide a dosage table for each 
-type of anesthetic, a dynamically updated formula for the correct answer, and a calculator function. 
+type of anesthetic, a dynamically updated formula for the dosing amount, and a limited calculator function. 
 
-Users' accuracy and response times are tracked via graphs displayed in the "Show Progress" element of the sidebar 
-to evaluate improvement. Users may also toggle which anesthetics are included in their assessment via the "Update 
-Settings" button.
-
-A list of educational references supporting the repetition and retrieval educational methodologies is provided 
+Users' accuracy and response times are tracked via graphs displayed in the "Show Progress" element of the sidebar. 
+Users may also toggle which anesthetics are included in their assessment via the "Update 
+Settings" button. A list of educational references supporting the repetition and retrieval educational methodologies is provided 
 on the interface. 
 
 ### Code
 All code can be found on my Github [here](https://github.com/TimothyFDavison/How-Much-Local). The application is built 
-on Streamlit and persistently deployed on the Streamlit Commmunity Cloud. It can be viewed live
+on Streamlit and persistently deployed on the Streamlit Commmunity Cloud - it can be viewed live
 [here](https://howmuchlocal.streamlit.app).

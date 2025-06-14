@@ -4,9 +4,54 @@ icon: "/assets/roots.png"
 title: "I Need To Grow Away From These Roots"
 ---
 ## I Need To Grow Away From These Roots
-Ambient music generation inspired by the audio component of David Whiting's artistic piece, [I Need To
-Grow Away From These Roots](https://www.vitling.xyz/i-need-to-grow-away-from-these-roots/). 
-All credit to the original artist. 
+This is an ambient music generation project inspired by the audio component of David Whiting's artistic piece,
+[I Need To Grow Away From These Roots](https://www.vitling.xyz/i-need-to-grow-away-from-these-roots/). All creative credit should be directed to the original artist.
+
+### Background
+I'm an avid musician. Occasionally, I see an intersection of my tech and music hobbies which captures 
+my interest. David Whiting's piece blends music theory with a calming synchronized light display built 
+in the shape of a tree. I'm a huge fan. 
+
+His project page included a loose recipe for how he played with music theory - specifically, the chord progression and 
+accent note selection and duration - to produce the soundscape. The recipe was specific enough to provide clear 
+guidelines for reproduction, but general enough that no two implementations are likely to be identical. 
+
+I decided to implement the music generation component and explore the chord progression via some basic network
+visualization. I may eventually build the tree component using LED strips and an Arduino or Raspberry Pi, if 
+time and apartment space allows.
+
+### Implementation
+The original artist provided the following "score":
+
+```
+Enumerate every possible Major, Minor, Major 7th and Minor 7th chord and all possible inversions, 
+beginning with A2 and ending with D5.
+Choose a random chord from the set.
+Play the chosen chord for 8 seconds
+Find all the chords from the set that have all but one note in common with the playing chord.
+Choose one of these at random.
+Go back to 3 and repeat forever.
+
+Play a note from the currently playing chord in (A) on a random waveform for a random duration - repeat a random
+amount of times if the duration is short.
+Wait a random amount of time.
+Go back to 1 and repeat forever
+
+Whenever a new chord is triggered by (A), illuminate each stem from root to tip with a colour corresponding to the 
+each note of the chord. Notes adjacent in the cycle of 5ths have similar hues.
+
+Whenever a note is played by (B), illuminate the tip of one of the stems with a light colour corresponding to the note.
+```
+I found that the chord progression setup lent itself very naturally to a random walk through a chord graph, in which 
+chords represented nodes and shared notes represented edges. I used `networkx` to produce that graph
+based on some parameters of interest, e.g. inclusion of major, minor, seventh, and diminished chords.
+
+I then used `numpy` to synthesize sine waves of musical notes based on their numerical frequencies, including adding some 
+fade and stylization to the sound envelope. I sprinkled in some randomness in the octaves and durations of the accent 
+notes, and then used `multiprocessing` and  `simpleaudio` to concurrently play the base chords and the accents.
+
+### Implementation
+
 
 ### Code
 All code can be found on my Github [here](https://github.com/TimothyFDavison/I-Need-To-Grow-Away-From-These-Roots).
