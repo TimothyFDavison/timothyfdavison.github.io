@@ -22,4 +22,4 @@ catch myself before leaving if traffic looks bad on a given evening.
 
 
 ### Code
-All code can be found on my Github [here](https://github.com/TimothyFDavison/How-Much-Local). 
+All code can be found on my Github [here](https://github.com/TimothyFDavison/Traffic-Mapper). 
