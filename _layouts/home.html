@@ -3,13 +3,11 @@ layout: default
 ---
 
 <div class="home">
-
-
   {{ content }}
 
   <section class="homepage-banner">
     <h1>Welcome!</h1>
-    <p><br>
+    <p>
       I am an AI researcher and software developer based in Washington, D.C.
     </p>
     <p>
@@ -21,22 +19,23 @@ layout: default
   {% capture site_lang %}{{ site.lang | default: "en" }}{% endcapture %}
 
   <div class="post-grid">
-  {% for post in paginator.posts %}
-    <div class="post-box">
-      <a href="{{ post.url | relative_url }}">
-        <div class="post-icon">
-          {% if post.icon %}
-            <img src="{{ post.icon | relative_url }}" alt="{{ post.title }} icon" />
-          {% else %}
-            <img src="/assets/icons/default-icon.png" alt="Default icon" />
-          {% endif %}
-        </div>
-        <div class="post-title">{{ post.title }}</div>
-      </a>
-    </div>
-  {% endfor %}
+    {% for post in paginator.posts %}
+      <div class="post-box">
+        <a href="{{ post.url | relative_url }}">
+          <div class="post-icon">
+            {% if post.icon %}
+              <img src="{{ post.icon | relative_url }}" alt="{{ post.title }} icon" />
+            {% else %}
+              <div class="default-icon">
+                <span>{{ post.title | slice: 0, 2 | upcase }}</span>
+              </div>
+            {% endif %}
+          </div>
+          <div class="post-title">{{ post.title }}</div>
+        </a>
+      </div>
+    {% endfor %}
   </div>
 
   {% include pagination.html %}
-
 </div>

@@ -1,5 +1,7 @@
 ---
-layout: page
+layout: post
+date: 2024-10-31 12:00:00 -0400
+categories: [projects, games]
 icon: "/assets/roots.png"
 title: "I Need To Grow Away From These Roots"
 ---

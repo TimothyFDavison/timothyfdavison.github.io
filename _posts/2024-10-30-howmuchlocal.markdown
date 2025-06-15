@@ -1,5 +1,7 @@
 ---
-layout: page
+layout: post
+date: 2024-10-30 12:00:00 -0400
+categories: [projects, data-visualization]
 icon: "/assets/howmuchlocal.png"
 title: "How Much Local"
 ---

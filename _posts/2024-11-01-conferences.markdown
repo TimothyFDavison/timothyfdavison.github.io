@@ -1,5 +1,7 @@
 ---
-layout: page
+layout: post
+date: 2024-11-01 12:00:00 -0400
+categories: [projects, data-visualization]
 icon: "/assets/conferencemapper.jpg"
 title: "Conference Mapper"
 ---

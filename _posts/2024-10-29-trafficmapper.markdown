@@ -1,7 +1,9 @@
 ---
-layout: page
+layout: post
 icon: "/assets/trafficmapper.jpg"
 title: "Traffic Mapper"
+date: 2024-10-29 12:00:00 -0400
+categories: [projects, tools]
 ---
 ## Traffic Mappper
 Washington, D.C. traffic is notorious. This is a quick script I threw together to make my daily commute just a little 
@@ -22,4 +24,4 @@ catch myself before leaving if traffic looks bad on a given evening.
 
 
 ### Code
-All code can be found on my Github [here](https://github.com/TimothyFDavison/Traffic-Mapper). 
+All code can be found on my Github [here](https://github.com/TimothyFDavison/Traffic-Mapper).

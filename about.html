@@ -109,38 +109,3 @@ permalink: /about/
 
 <script src="{{ '/assets/js/present_day.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/timeline.js' | relative_url }}" defer></script>
-
-<style>
-    .timeline-event {
-        margin-bottom: 10px; /* Ensures space between events */
-    }
-
-    .fade-in {
-        opacity: 1;
-        transition: opacity 0.5s ease-in;
-    }
-
-    .fade-out {
-        opacity: 0;
-        transition: opacity 0.5s ease-in;
-    }
-</style>
-
-<script>
-    document.addEventListener('scroll', function() {
-        const timelineItems = document.querySelectorAll('.timeline-event'); // Adjust class name as necessary
-
-        timelineItems.forEach(item => {
-            const bounding = item.getBoundingClientRect();
-            const windowHeight = window.innerHeight;
-
-            if (bounding.top < windowHeight && bounding.bottom >= 0) {
-                item.classList.add('fade-in');
-                item.classList.remove('fade-out');
-            } else {
-                item.classList.add('fade-out');
-                item.classList.remove('fade-in');
-            }
-        });
-    });
-</script>

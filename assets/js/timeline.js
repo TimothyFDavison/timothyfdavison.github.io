@@ -1,24 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
   const events = document.querySelectorAll('.timeline-event');
-
-  console.log('Events found:', events.length);  // Debugging line
-
-  if (events.length === 0) {
-    console.warn('No .timeline-event elements found');
-  } else {
-    events.forEach(event => console.log('Event found:', event)); // Should log each event
-  }
-
-  const onScroll = () => {
+  
+  const handleScroll = () => {
     events.forEach(event => {
       const rect = event.getBoundingClientRect();
-      if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-        event.classList.add('visible');
+      const windowHeight = window.innerHeight;
+      
+      if (rect.top < windowHeight && rect.bottom >= 0) {
+        event.classList.add('fade-in');
+        event.classList.remove('fade-out');
       } else {
-        event.classList.remove('visible');
+        event.classList.add('fade-out');
+        event.classList.remove('fade-in');
       }
     });
   };
-
-  window.addEventListener('scroll', onScroll);
+  
+  // Initial check on page load
+  handleScroll();
+  
+  // Add scroll event listener
+  window.addEventListener('scroll', handleScroll);
 });
