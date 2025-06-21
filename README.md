@@ -11,5 +11,5 @@ Site produced using Jekyll and the Whiteglass template.
 - Widen layout of landing page
 - Add a fuller bio, details on technologies and skillsets
 - Modify date scheme for posts
-- Add a footer w/ contact information
+~~- Add a footer w/ contact information~~
 - Add screenshots to posts
