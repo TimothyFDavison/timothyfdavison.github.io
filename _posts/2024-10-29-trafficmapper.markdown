@@ -1,6 +1,6 @@
 ---
 layout: page
-icon: "/assets/trafficmapper.jpg"
+icon: "/assets/trafficmapper-purple.png"
 title: "Traffic Mapper"
 ---
 ## Traffic Mappper

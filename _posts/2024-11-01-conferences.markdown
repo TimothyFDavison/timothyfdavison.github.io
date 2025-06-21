@@ -1,6 +1,6 @@
 ---
 layout: page
-icon: "/assets/conferencemapper.jpg"
+icon: "/assets/conferencemapper-orange.png"
 title: "Conference Mapper"
 ---
 ## Conference Mapper
