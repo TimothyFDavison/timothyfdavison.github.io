@@ -7,6 +7,8 @@ title: "Complex-Valued Neural Networks"
 # Complex-Valued Neural Networks
 This post is a work in progress as I experiment with complex-valued neural networks.
 
+Code is under development [here](https://github.com/TimothyFDavison/Complex-Micrograd).
+
 ## Background
 Many optimization problems involving complex-valued parameters (e.g. 
 in signal processing) treat the real and imaginary components of complex numbers as separate real-valued channels. 
