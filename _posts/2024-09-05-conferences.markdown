@@ -39,7 +39,7 @@ panelist representing the program at the 2022 CAE-R symposium.*
 Cybersecurity Research (CAE-R) Symposium, Atlanta, GA.
 
 *From 2019 through 2021 I served as the technical lead for code stylometry on a research grant funded by the Office of 
-Naval Research (ONR) MINERVA program. My team and I developed novel approaches to identify malware authors and conduct
+Naval Research (ONR) Minerva program. My team and I developed novel approaches to identify malware authors and conduct
 Advanced Persistent Threat (APT) attribution of malware binaries.*
 
 *Our early work replicated studies in this space. I built tools to featurize abstract syntax trees, decompiled code, 
