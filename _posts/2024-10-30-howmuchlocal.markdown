@@ -13,6 +13,8 @@ residents' aptitude over time using varied education methodologies.
 
 All code can be found on my Github [here](https://github.com/TimothyFDavison/How-Much-Local)
 
+![How Much Local](/assets/howmuchlocal-presentation.jpg "Dr. Saoud presenting our work.")
+
 ### Background
 Understanding safe dosing and volumes of local anesthesia is critical for the practicing surgeon. In the operating 
 room or during sterile procedures, this requires some mental effort that many struggle with. This project seeks to 
@@ -33,13 +35,21 @@ A physician is presented with a patient's age, weight, and selected anesthetic t
 calculate the proper dosage amount of the anesthetic. Upon submission of their estimate, the interface reveals 
 the correct dosage and provides a green/yellow/red assessment on the accuracy of the user's estimate.
 
+![How Much Local](/assets/howmuchlocal-ui1.png "The UI landing page.")
+
 To assist the user with their thinking, optional elements below the main section provide a dosage table for each 
 type of anesthetic, a dynamically updated formula for the dosing amount, and a limited calculator function. 
+
+![How Much Local](/assets/howmuchlocal-ui2.png "Some features to provide guidance and hints.")
 
 Users' accuracy and response times are tracked via graphs displayed in the "Show Progress" element of the sidebar. 
 Users may also toggle which anesthetics are included in their assessment via the "Update 
 Settings" button. A list of educational references supporting the repetition and retrieval educational methodologies is provided 
 on the interface. 
+
+![How Much Local](/assets/howmuchlocal-ui3.png "User performance tracking by browser session.")
+
+![How Much Local](/assets/howmuchlocal-ui4.png "Settings to select tracked anesthetics.")
 
 ### Code
 All code can be found on my Github [here](https://github.com/TimothyFDavison/How-Much-Local). The application is built 
