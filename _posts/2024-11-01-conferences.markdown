@@ -13,6 +13,10 @@ My friends in academia, the military, and the medical fields have found this app
 All code can be found on my Github [here](https://github.com/TimothyFDavison/Conference-Mapper). At the time of writing,
 the website is live and can be visited [here](https://conference-mapper.com).
 
+|                      ![](/assets/conf-1.png)                      | 
+|:-----------------------------------------------------------------:| 
+| *[https://conference-mapper.com](https://conference-mapper.com).* |
+
 
 ### Background
 I was inspired to build the Conference Mapper after hearing about my coworker's trip to Paris to attend 
@@ -20,7 +24,13 @@ a professional symposium. I, meanwhile, was on my 12th work trip to Fayetteville
 a charm of its own, but in that particular moment I felt some good-natured envy of my coworker's arrangements. 
 
 Having now built the Conference Mapper, I am delighted to announce that I have been accepted to co-chair a minitrack at
-the Hawaii International Conference on System Sciences (HICSS 2026)! My employer has agreed to fund this endeavor.
+the [Hawaii International Conference on System Sciences (HICSS 2026)](https://hicss.hawaii.edu/)! 
+My employer has agreed to fund this endeavor.
+
+
+|                                   ![](/assets/conf-2.png)                                    | 
+|:--------------------------------------------------------------------------------------------:| 
+| *The website provides filters for conference categories, dates, and call-for-papers status.* |
 
 ### Implementation
 The website is a full-stack application in four parts: 
@@ -38,11 +48,21 @@ Filters are provided to allow a user to select categories and dates of interest.
 can be deployed with a single `docker compose up` command. The system is currently deployed via AWS, although it can 
 be run locally quite easily. 
 
+|      ![](/assets/conf-4.png)       | 
+|:----------------------------------:| 
+| *WikiCFP's conference categories.* |
+
+
 This implementation has a few notable drawbacks. I only source conferences from WikiCFP, so I'm limited to the 
 selection offered by that website and to their conference categorization schema. Conferences without listed locations
 or whose formatting is incompatible with my scraper's design are dropped from the record. 
 I considered extending this system for robustness and to incorporate new data sources, but found that the
 proof-of-concept was sufficient for my personal usage. 
+
+
+|                 ![](/assets/conf-3.png)                 | 
+|:-------------------------------------------------------:| 
+| *Categories available on the website's dropdown menu..* |
 
 ### Code
 All code can be found on my Github [here](https://github.com/TimothyFDavison/Conference-Mapper).

@@ -7,17 +7,43 @@ title: "I Need To Grow Away From These Roots"
 This is an ambient music generation project inspired by the audio component of David Whiting's artistic piece,
 [I Need To Grow Away From These Roots](https://www.vitling.xyz/i-need-to-grow-away-from-these-roots/). All creative credit should be directed to the original artist.
 
-All code can be found on my Github [here](https://github.com/TimothyFDavison/I-Need-To-Grow-Away-From-These-Roots).
+All code can be found on my Github [here](https://github.com/TimothyFDavison/I-Need-To-Grow-Away-From-These-Roots). 
 
+Examples of the produced soundscapes - which are synthesized 
+chords constructed mathematically rom waveforms and which progress on a random walk described later in this article - 
+are provided below.
+
+<div style="text-align: center;">
+  <audio controls>
+    <source src="{{ '/assets/roots-1.mp3' | relative_url }}" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div style="text-align: center;">
+  <audio controls>
+    <source src="{{ '/assets/roots-2.mp3' | relative_url }}" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
 
 ### Background
 I'm an avid musician. Occasionally, I see an intersection of my tech and music hobbies which captures 
 my interest. David Whiting's piece blends music theory with a calming synchronized light display built 
-in the shape of a tree. I'm a huge fan. 
+in the shape of a tree. I'm a huge fan.
 
 His project page included a loose recipe for how he played with music theory - specifically, the chord progression and 
 accent note selection and duration - to produce the soundscape. The recipe was specific enough to provide clear 
 guidelines for reproduction, but general enough that no two implementations are likely to be identical. 
+
+<figure style="text-align: center;">
+  <iframe src="https://www.vitling.xyz/videos/roots_large.mp4"
+          width="460"
+          height="460"
+          allowfullscreen>
+  </iframe>
+  <figcaption>David Whiting's original art piece.</figcaption>
+</figure>
 
 I decided to implement the music generation component and explore the chord progression via some basic network
 visualization. I may eventually build the tree component using LED strips and an Arduino or Raspberry Pi, if 
@@ -49,6 +75,10 @@ I found that the chord progression setup lent itself very naturally to a random 
 chords represented nodes and shared notes represented edges. I used `networkx` to produce that graph
 based on some parameters of interest, e.g. inclusion of major, minor, seventh, and diminished chords.
 
+|       ![](/assets/graph-1.png)        | 
+|:-------------------------------------:| 
+| *Chord network spanning two octaves.* |
+
 I then used `numpy` to synthesize sine waves of musical notes based on their numerical frequencies, including adding 
 some fade and stylization to the sound envelope. I sprinkled in some randomness in the octaves and durations of the
 accent notes, and then used `multiprocessing` and  `simpleaudio` to concurrently play the base chords and the accents.
@@ -74,6 +104,10 @@ Are A minor and C minor more similar to one another than A minor and A major? Sh
 (identical chords separated by one octave) are from one another, and is that difference less significant than the 
 difference between F4 minor and G4 minor?
 
+|       ![](/assets/graph-2.png)        | 
+|:-------------------------------------:| 
+| *Reducing octave separation, increasing separation between notes.* |
+
 These questions arise naturally from attempting to visualize our chord network, as the design of our distance metric 
 will induce radically different topologies in the output graph. I spent some time playing around with different ways 
 to quanitfy similarity 
@@ -81,6 +115,10 @@ and distance within this context, exploring different possible weights in a dist
 separation, frequency clusters, number of overlapping root notes between chords, etc. Some of these knobs and dials 
 can be found in `config` files on my Github page, with accompanying screenshots from network structures emanating from 
 those variations on the Github README.
+
+|                            ![](/assets/graph-3.png)                             | 
+|:-------------------------------------------------------------------------------:| 
+| *Further reducing octave separation, such that chords cluster by shared notes.* |
 
 ### Code
 All code can be found on my Github [here](https://github.com/TimothyFDavison/I-Need-To-Grow-Away-From-These-Roots).
