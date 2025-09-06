@@ -10,7 +10,7 @@ This is an ambient music generation project inspired by the audio component of D
 All code can be found on my Github [here](https://github.com/TimothyFDavison/I-Need-To-Grow-Away-From-These-Roots). 
 
 Examples of the produced soundscapes - which are synthesized 
-chords constructed mathematically rom waveforms and which progress on a random walk described later in this article - 
+chords constructed mathematically from waveforms and which progress on a random walk described later in this article - 
 are provided below.
 
 <div style="text-align: center;">
