@@ -4,7 +4,7 @@ icon: "/assets/cvnn-1.png"
 title: "Complex-Valued Neural Networks"
 ---
 
-# Experimenting with Complex-Valued Neural Networks
+# Complex-Valued Neural Networks
 This post is a work in progress as I experiment with complex-valued neural networks.
 
 ## Background
