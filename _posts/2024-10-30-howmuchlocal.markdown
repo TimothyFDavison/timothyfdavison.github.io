@@ -13,7 +13,9 @@ residents' aptitude over time using varied education methodologies.
 
 All code can be found on my Github [here](https://github.com/TimothyFDavison/How-Much-Local)
 
-![How Much Local](/assets/howmuchlocal-presentation.jpg "Dr. Saoud presenting our work.")
+|                      ![](/assets/howmuchlocal-presentation.jpg)                      | 
+|:-----------------------------------------------------------------:| 
+| *Dr. Saoud presenting our work.* |
 
 ### Background
 Understanding safe dosing and volumes of local anesthesia is critical for the practicing surgeon. In the operating 
