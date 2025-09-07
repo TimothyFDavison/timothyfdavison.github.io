@@ -34,8 +34,8 @@ building complex-valued neural networks — including transformers.
 
 ## Experimentation
 See `CVNN.ipynb` on my [Github page](https://github.com/TimothyFDavison/Complex-Micrograd)
-for what I'm working on so far. Beginning with a `ComplexValue` class to represent complex values, I start with a 
-ComplexValue class to represent complex numbers and aim to build a personal library for complex-valued modeling, 
+for what I'm working on so far.  I start with a 
+`ComplexValue` class to represent complex numbers and aim to build a personal library for complex-valued modeling 
 using Karpathy’s Micrograd as inspiration.
 
 Some resources I'm drawing from,
