@@ -20,7 +20,7 @@ is constant which renders
 such functions unusable for frameworks like gradient descent. 
 
 For an intuition about this challenge, consider that in real-valued optimization, the gradient points in a 
-s ingle direction in the real domain. 
+single direction in the real domain. 
 In contrast, the complex plane allows infinitely many directions of variation due to the extra degree of freedom
 introduced by the complex phase.
 
