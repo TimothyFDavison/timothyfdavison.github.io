@@ -43,7 +43,7 @@ Some resources I'm drawing from,
 and the CR-Calculus (Kreutz-Delgado, 2009)](https://arxiv.org/pdf/0906.4835)
 - [A short tutorial on Wirtinger Calculus with applications in
 quantum information (Koor, 2023)](https://arxiv.org/pdf/2312.04858)
-- [nput Convex Neural Networks (Amos, 2017)](https://arxiv.org/pdf/1609.07152)
+- [Input Convex Neural Networks (Amos, 2017)](https://arxiv.org/pdf/1609.07152)
 - [Deep Complex Networks (Trabelsi, 2018)](https://arxiv.org/pdf/1705.09792)
 - [A Survey of Complex-Valued Neural Networks (Bassey, 2021)](https://arxiv.org/pdf/2101.12249)
 - [Theory and Implementation of Complex-Valued Neural Networks (Barrachina, 2023)](https://arxiv.org/pdf/2302.08286)
