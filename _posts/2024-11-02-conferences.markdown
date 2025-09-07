@@ -42,7 +42,8 @@ Cybersecurity Research (CAE-R) Symposium, Atlanta, GA.
 Naval Research (ONR) Minerva program. My team and I developed novel approaches to identify malware authors and conduct
 Advanced Persistent Threat (APT) attribution of malware binaries.*
 
-*Our early work replicated studies in this space. I built tools to featurize abstract syntax trees, decompiled code, 
+*Our early work replicated studies in this space. I built tools to extract features from abstract syntax trees, 
+decompiled code, 
 strings, and information entropy of a given malware binary, then trained machine learning models 
 to explore the authorship attribution potential of those features.*
 
