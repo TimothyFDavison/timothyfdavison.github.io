@@ -7,7 +7,7 @@ title: "Conference Publications"
 # Conference Publications
 
 I have authored or co-authored several (20+) research papers, technical reports, technical whitepapers, proposals,
-memos, and other analytical products. However, the majority of these are not shareable publicly. 
+memos, and other analytical products. However, the majority of these are not publicly available. 
 Listed on this page are a few conference papers and talks which I *can* share and discuss.
 
 My research interests have historically included generative multimedia and associated model architectures (especially 
