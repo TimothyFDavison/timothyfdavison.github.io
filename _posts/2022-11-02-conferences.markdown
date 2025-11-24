@@ -6,7 +6,7 @@ title: "Conference Publications"
 
 # Conference Publications
 
-I have authored or co-authored several (20+) research papers, technical reports, technical whitepapers, proposals,
+I have authored or co-authored many research papers, technical reports, technical whitepapers, proposals,
 memos, and other analytical products. However, the majority of these are not publicly available. 
 Listed on this page are a few conference papers and talks which I *can* share and discuss.
 
